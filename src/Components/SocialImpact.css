@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'jeko-medium';
+    src: url(/src/Assets/Jeko\ Medium.ttf) format('truetype')
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    max-width: 90%;
+    margin: auto;
+    border-bottom: 1px solid white;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    gap:25px;
+    font-size: 18px;
+    font-weight: 100;
+    list-style: none;
+    font-family: 'DM Sans';
+}
+
+.logo {
+    max-width: 1250px;
+}
+
+
+.nav-items li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav-items li a:hover {
+    text-decoration: underline;
+}
+
+/* .page {
+    max-width: 90%;
+    margin: auto;
+} */
+
+.social-impact-hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    height: 80vh;
+    color: white;
+    max-width: 90%;
+    margin: auto;
+    font-family: 'jeko-medium';
+}
+
+.social-impact-hero-section h1 {
+    font-size: 64px;
+    font-weight: 100;
+    max-width: 1247px;
+}
+
+.social-impact-hero-section h2 {
+    font-weight: 100;
+    font-size: 24px;
+    font-family: 'DM Sans';
+}
+
+.social-business-section1 {
+    display: block;
+    background-color: black;
+    border-radius: 53px;
+    position: relative;
+    width: 100%;
+   
+}
+
+.stats-area {
+    border-radius: 22px;
+    color: white;
+    max-width: 90%;
+    padding: 100px 260px 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 3;
+    font-size: 2rem;
+}
+
+.stats-area h2 {
+    font-size: 32px;
+    font-family: 'jeko-medium';
+    font-weight: normal;
+}
+
+.social-business-section-info {
+    flex: 1; /* The right-side div takes up the remaining space */
+    padding: 20px; 
+    color: white;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+
+
+.social-img {
+    max-height: max(70vh,500px);
+    max-width: 45vw;
+    object-fit: cover;
+    border-radius: 13px;
+    margin-right:90px;
+}
+
+.social-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 40%;
+}
+
+.social-business-title {
+    font-family: 'jeko-medium';
+    font-weight: 300;
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-business-description {
+    font-family: 'DM Sans';
+    font-weight: 200;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
