@@ -129,6 +129,10 @@ We build for today, with a lens on tomorrow.</p>
         </div>
       </div>  
 
+      <div className='social-impact-conclusion'>
+        <h1>Become part of our mission <span className='new-line'>and <span className='join-btn'>join elewa.</span></span> </h1>
+      </div>
+
     </div>
   )
 }
