@@ -44,8 +44,8 @@ function SocialImpact() {
         {/* this is the menu and some items for the navbar */}
             <ul className='nav-items'>
               <li><a href='#'>Home</a></li>
-              <li><a href='#'>About us</a></li>
-              <li><a href='#'>Social Impact</a></li>
+              <li><a href='/about'>About us</a></li>
+              <li><a href='/'>Social Impact</a></li>
               <li><a href='#'>Invest</a></li>
               <li><a href='#'>Venture Labs</a></li>
               <li><a href='#'>Brands</a></li>
