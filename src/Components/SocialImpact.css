@@ -210,8 +210,6 @@
     background-color: #ececec;
     display: grid;
     place-items: center;
-    font-size: var(--elewa-group-website-font-size-elewa-text);
-    font-family: var(--elewa-group-website-dmsans-regular);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -247,8 +245,7 @@
     font-weight: normal;
 }
 
-/* Add these styles to your CSS file */
-/* Add these styles to your CSS file */
+
 .project-section-banner {
     margin-top: 20px;
     display: flex;
@@ -259,7 +256,7 @@
 
 .slider-container {
     display: flex;
-    animation: scroll 150s linear infinite; /* Adjust the duration as needed */
+    animation: scroll 150s linear infinite;
 }
 
 .slider {
@@ -291,7 +288,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%); /* Adjust the percentage based on your slide width */
+        transform: translateX(-100%);
     }
 }
 
@@ -382,4 +379,55 @@
 
 .social-media-icons img {
     margin-right: 10px;
+}
+
+/* Media query for phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .nav-header {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .nav-items {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .logo {
+        max-width: 100%;
+    }
+}
+
+/* Media query for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .nav-header {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .nav-items {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .logo {
+        max-width: 100%;
+    }
+}
+
+/* Media query for larger screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .nav-header {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .nav-items {
+        gap: 25px;
+        font-size: 18px;
+    }
+
+    .logo {
+        max-width: 1250px;
+    }
 }
