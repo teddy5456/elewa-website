@@ -1,7 +1,13 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './SocialImpact.css'
+import imagesData from '../Assets/images.json'; // Import the JSON file
+
 
 function SocialImpact() {
+    const [images, setImages] = useState(imagesData.images);
+  
+
+
   return (
     // This is the header section of the social impact page
     <div className='page'>
@@ -79,15 +85,14 @@ function SocialImpact() {
             </div>
         </div>
 
+
+
         <div className='social-business-section-info beyond-business'>
                 <img className='social-img' src="https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,q_90,w_400/v1675690301/elewa-group-website/Images/IMG_0764_twyo3k.png"></img>
                 <div className='mindset-text'>
                     <h1 className='social-business-title beyond-title'>Beyond business</h1>
                     <p className='social-business-description beyond-description'>We channel a good amount of our resources into giving back.
-
-Through projects such as our coding school in Kakuma refugee camp, training teachers in pastoral Samburu and our open-source coding initiatives providing entry-level opportunities to hundreds of junior engineers
-
-These projects don't necessarily have an immediate financial return, but their impact can be tangibly measured in the long-term.</p>
+                        Through projects such as our coding school in Kakuma refugee camp, training teachers in pastoral Samburu and our open-source coding initiatives providing entry-level opportunities to hundreds of junior engineers  These projects don't necessarily have an immediate financial return, but their impact can be tangibly measured in the long-term.</p>
                 </div>
             </div>
 
@@ -106,6 +111,24 @@ We build for today, with a lens on tomorrow.</p>
                 </div>
             </div>
         </div>
+
+        <div className='project-section'>
+                            <div className='project-section-title'>
+                    <h1>Some of our impact projects</h1>
+                </div>
+        </div>
+        <div className='project-section-banner'>
+        <div className='slider-container'>
+          <div className='slider'>
+            {images.map((image, index) => (
+              <div key={index} className='slide'>
+                <img src={image} alt={`Image ${index + 1}`} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>  
+
     </div>
   )
 }
