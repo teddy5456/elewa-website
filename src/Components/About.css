@@ -267,3 +267,33 @@ h1 {
     align-items: center;
     text-align: center;
 }
+
+.map-italanta {
+    background-color: rgb(230, 229, 229);
+    
+}
+
+.map-italanta-inner {
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--elewa-group-website-color-card);
+    padding: 80px 0;
+}
+
+.map-section img{
+    margin: 0 50px;
+    display: grid;
+}
+
+.map-paragraph h2 {
+    font-family: 'jeko-medium';
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.map-paragraph p {
+    font-family: 'DM Sans';
+    font-size: 19.2px;
+}

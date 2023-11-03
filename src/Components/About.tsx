@@ -193,6 +193,20 @@ function About() {
             </div>
         </div>
       </div>
+    
+
+        <div className='map-italanta'>
+            <div className='map-italanta-inner'>
+                <div className='map-section'>
+                    <img src='https://www.google.com/maps/d/thumbnail?mid=1czpmSF_G5TpiNqH0CYkRvgqNG6E&hl=en'></img>
+                </div>
+                <div className='map-paragraph'>
+                    <h2>How to get there</h2>
+                    <p>Based in the heart of Westlands, Nairobi, Kenya, we are easily accessible from all parts of the city.</p><br></br><br></br>
+                    <p>Not in town?Teams, meets or zoom are our second name. Book an appointment today via <span>contact@elewa.ke</span></p>
+                </div>
+            </div>
+        </div>
     </div>
   );
 }
