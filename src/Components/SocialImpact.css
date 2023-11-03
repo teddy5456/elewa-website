@@ -323,3 +323,63 @@
 .new-line {
     display: block;
 }
+
+.social-impact-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    height:40vh;
+    background-color:black;
+    padding-inline: 0.5rem;
+    padding-top: 3rem;
+    max-width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    color: white;
+}
+
+.social-impact-footer-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1.5rem 1rem;
+    border-top: 1px solid white;
+}
+
+.footer-inner {
+    max-width: 90%;
+    margin: auto;
+}
+
+.footer-divs {
+    margin-right: 40px;
+}
+
+.footer-divs h2 {
+    font-size: 19.2;
+    text-decoration: underline;
+    font-family: 'jeko-medium';
+}
+
+.footer-divs p {
+    font-size: 17.6px;
+    font-family: 'DM Sans';
+}
+
+.footer-divs p:hover {
+    text-decoration: underline;
+}
+
+.social-impact-footer-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-icons {
+    display: flex;
+}
+
+.social-media-icons img {
+    margin-right: 10px;
+}
