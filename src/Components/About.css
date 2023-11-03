@@ -226,6 +226,10 @@ h1 {
     flex-wrap: wrap;
 }
 
+.italic-codeT {
+    font-style: italic;
+}
+
 .culture-section-code h2 {
     font-family: 'jeko-medium';
     font-size: 40px;
