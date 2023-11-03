@@ -59,8 +59,52 @@ function SocialImpact() {
                 <p className='social-business-description'>With a young dynamic population that is eager to contribute to the global economy, East Africa has a lot to offer to the world. Now is the time to nurture sustainable, inclusive and scalable business. The rest will take care of itself.</p>
             </div>
             </div>
+        </div>
 
-            
+
+        {/* this is the mindset part of the page */}
+        <div className='right-section'>
+            <div className='mindset-picture-text'>
+                <div className='mindset-text'>
+                    <h1 className='social-business-title mindseth1'>A cooperative mindset</h1>
+                    <p className='social-business-description mindsetp'>Elewa has one shared objective; To
+                            unlock the true potential of individuals, teams, and the
+                            community. We believe strongly in the power of 
+                            sharing ideas and continuously strive to grow each other and ourselves. 
+                            Internally, but also within the larger communities in which we are active.</p>
+                </div>
+                <div >
+                    <img className='mindset-picture1' src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1681308135/buffelo_i60xeu.jpg"></img>
+                </div>
+            </div>
+        </div>
+
+        <div className='social-business-section-info beyond-business'>
+                <img className='social-img' src="https://res.cloudinary.com/dyl3rncv3/image/upload/c_scale,q_90,w_400/v1675690301/elewa-group-website/Images/IMG_0764_twyo3k.png"></img>
+                <div className='mindset-text'>
+                    <h1 className='social-business-title beyond-title'>Beyond business</h1>
+                    <p className='social-business-description beyond-description'>We channel a good amount of our resources into giving back.
+
+Through projects such as our coding school in Kakuma refugee camp, training teachers in pastoral Samburu and our open-source coding initiatives providing entry-level opportunities to hundreds of junior engineers
+
+These projects don't necessarily have an immediate financial return, but their impact can be tangibly measured in the long-term.</p>
+                </div>
+            </div>
+
+                {/* this is the mindset part of the page */}
+                <div className='right-section open-knowledge'>
+            <div className='mindset-picture-text'>
+                <div className='mindset-text'>
+                    <h1 className='social-business-title mindseth1'>Open Knowledge</h1>
+                    <p className='social-business-description mindsetp'>Open knowledge
+What we learn, we share. Through community events, open knowledge repositories, regular teaching moments (everyone a teacher) and academic partnerships.
+
+We build for today, with a lens on tomorrow.</p>
+                </div>
+                <div >
+                    <img className='mindset-picture1' src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690302/elewa-group-website/Images/unnamed_1_m3dvll.png"></img>
+                </div>
+            </div>
         </div>
     </div>
   )
