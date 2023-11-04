@@ -46,7 +46,7 @@ function SocialImpact() {
               <li><a href='#'>Home</a></li>
               <li><a href='/about'>About us</a></li>
               <li><a href='/'>Social Impact</a></li>
-              <li><a href='#'>Invest</a></li>
+              <li><a href='/invest'>Invest</a></li>
               <li><a href='#'>Venture Labs</a></li>
               <li><a href='#'>Brands</a></li>
               <li><a href='#'>Careers</a></li>

@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SocialImpact from './Components/SocialImpact';
 import About from './Components/About';
+import Invest from './Components/Invest';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path='/' element={<SocialImpact />} />
             <Route path='/about' element={<About />} />
+            <Route path='/invest' element={<Invest />} />
           </Routes>
         </Router>
 

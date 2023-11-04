@@ -3,19 +3,20 @@ import './About.css'
 import membersData from '../Assets/members.json';
 
 function About() {
+  // Initialize state variables
   const [members, setData] = useState(membersData.members);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Function to handle moving to the previous member
   const handleMoveLeft = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? members.length - 1 : prevIndex - 1));
   };
 
+  // Function to handle moving to the next member
   const handleMoveRight = () => {
     setCurrentIndex((prevIndex) => (prevIndex === members.length - 1 ? 0 : prevIndex + 1));
   };
 
-  
-  
   return (
     <div>
       <div className='opacity'></div>
@@ -32,7 +33,7 @@ function About() {
             alt='logo'
           ></img>
           <div>
-            {/* this is the menu and some items for the navbar */}
+            {/* Menu and navigation items for the navbar */}
             <ul className='nav-items'>
               <li>
                 <a href='#'>Home</a>
@@ -44,7 +45,7 @@ function About() {
                 <a href='/'>Social Impact</a>
               </li>
               <li>
-                <a href='#'>Invest</a>
+                <a href='/invest'>Invest</a>
               </li>
               <li>
                 <a href='#'>Venture Labs</a>
@@ -63,12 +64,16 @@ function About() {
         </div>
       </div>
 
+      {/* This is the hero section */}
+
       <div className='about-hero-section'>
         <h2 className='scaling'>HOW TO RECOGNIZE AN ELEWA MEMBER</h2>
         <h1 className='title-hero'>
           Dependable, Creative, Supportive, Open Minded and Fun*
         </h1>
       </div>
+
+      {/* the we-care section startts here */}
 
       <div className='curve'>
         <div className='we-care-section'>
@@ -129,6 +134,9 @@ function About() {
         </div>
       </div>
 
+
+      {/* This is where the user can meet the team */}
+
       <div className='team-management-section'>
         <div className='team-inner'>
           <div>
@@ -136,6 +144,7 @@ function About() {
               Team | <span className='management'>Management</span>
             </h1>
           </div>
+          {/* mapping the data from the json file */}
           <div className='belt-slide'>
             {members.map((member, index) => (
               <div key={index} className='member-belt'>
@@ -156,6 +165,7 @@ function About() {
         </div>
       </div>
 
+      {/* this the the culture and value section */}
 
       <div className='culture-section'>
         <div className='culture-section-inner'>
@@ -167,12 +177,12 @@ function About() {
                 <div className='code-box left'>
                     <img src='https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/coorperative_kzlzrg.png'></img>
                     <h2>Cooperative</h2>
-                    <p>One for all ,all for one! We have a cooperative and open mindset. If one of us grows, all will follow.</p>
+                    <p>One for all, all for one! We have a cooperative and open mindset. If one of us grows, all will follow.</p>
                 </div>
                 <div className='code-box right'>
                     <img src='https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690301/elewa-group-website/Icons/PNG/ownership_yno4a2.png'></img>
                     <h2>Ownership</h2>
-                    <p>We are dependable and honour our commitments. When things don't go as planned, as they sometimes do, we communicate early to avoid catastrophe.</p>
+                    <p>We are dependable and honor our commitments. When things don't go as planned, as they sometimes do, we communicate early to avoid catastrophe.</p>
                 </div>
                 <div className='code-box left'>
                     <img src="https://static.thenounproject.com/png/1721983-200.png"></img>
@@ -189,24 +199,73 @@ function About() {
                     <h2>Transparency</h2>
                     <p>Transparency, an open mind, and an open heart hold our organization together. We commit to and promote full transparency to ourselves, our stakeholders, and our beneficiaries. We furthermore invest heavily in open-source and open-data projects, as true potential lies everywhere. Not just within.</p>
                 </div>
-
             </div>
         </div>
       </div>
-    
 
-        <div className='map-italanta'>
-            <div className='map-italanta-inner'>
-                <div className='map-section'>
-                    <img src='https://www.google.com/maps/d/thumbnail?mid=1czpmSF_G5TpiNqH0CYkRvgqNG6E&hl=en'></img>
-                </div>
-                <div className='map-paragraph'>
-                    <h2>How to get there</h2>
-                    <p>Based in the heart of Westlands, Nairobi, Kenya, we are easily accessible from all parts of the city.</p><br></br><br></br>
-                    <p>Not in town?Teams, meets or zoom are our second name. Book an appointment today via <span>contact@elewa.ke</span></p>
-                </div>
-            </div>
+                    
+            {/* this is the start of the map section i had to use a picture since an actual map would use a lot of libraries*/}
+      <div className='map-italanta'>
+        <div className='map-italanta-inner'>
+          <div className='map-section'>
+            <img src='https://www.google.com/maps/d/thumbnail?mid=1czpmSF_G5TpiNqH0CYkRvgqNG6E&hl=en'></img>
+          </div>
+          <div className='map-paragraph'>
+            <h2>How to get there</h2>
+            <p>Based in the heart of Westlands, Nairobi, Kenya, we are easily accessible from all parts of the city.</p><br></br><br></br>
+            <p>Not in town? Teams, meets or Zoom are our second name. Book an appointment today via <span>contact@elewa.ke</span></p>
+          </div>
         </div>
+      </div>
+
+                {/* this is the footer i will be using the same one for all three pages since they look alike */}
+      <div className='social-impact-footer'>
+        <div className='footer-inner'>
+          <div className='social-impact-footer-contacts'>
+            <div className='Headquarters footer-divs'>
+              <h2>Headquarters</h2>
+              <p>The Promenade, 19 General <br></br> Mathenge Rd <br></br> Nairobi, Kenya</p>
+            </div>
+            <div className='contacts footer-divs'>
+              <h2>Contacts</h2>
+              <p>T +254 78 92 27 755 <br></br> E info@elewa.ke</p>
+            </div>
+            <div className='navigation footer-divs'>
+              <h2>Navigation</h2>
+              <p>About us</p>
+              <p>Social<br></br>impact</p>
+              <p>Invest</p>
+              <p>News</p>
+              <p>Contact</p>
+            </div>
+            <div  className='brands footer-divs'>
+              <h2>Brands</h2>
+              <p>Elewa</p>
+              <p>Italata</p>
+              <p>Venture labs</p>
+            </div>
+            <div className='privacy footer divs'>
+              <h2>Privacy</h2>
+              <p>Terms and<br></br>conditions</p>
+              <p>Cookie preferences</p>
+            </div>
+          </div>
+          <div className='social-impact-footer-logo'>
+            <img src='https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690297/elewa-group-website/Icons/SVG/_Logo/Logo_White_arvoyx.svg'></img>
+            <div className='social-media-icons'>
+              <div>
+                <img src='https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg'></img>
+              </div>
+              <div>
+                <img src='https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg'></img>
+              </div>
+              <div>
+                <img src='https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg'></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

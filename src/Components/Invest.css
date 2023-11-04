@@ -1,0 +1,182 @@
+.invest-hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    height: 80vh;
+    color: white;
+    max-width: 90%;
+    margin: auto;
+    font-family: 'jeko-medium';
+}
+
+.invest-hero-section h1 {
+    font-size: 58px;
+    font-weight: 100;
+    max-width: 747px;
+}
+
+.invest-hero-section h2 {
+    font-weight: 100;
+    font-size: 19px;
+    font-family: 'DM Sans';
+}
+
+.invest-info-section {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+.invest-info-section-inner {
+    width: 90%;
+    margin: auto;
+}
+
+
+.invest-info-section h1 {
+    color: black;
+    font-size: 72px;
+    padding: 50px 0px 0px;
+    font-weight: normal;
+    font-family: 'jeko-medium';
+}
+
+.invest-info-section p {
+    font-size: 32px;
+    padding:30px 0px 0px;
+    font-family: 'DM Sans';
+    max-width: 70%;
+}
+
+.invest-info-section img{
+    border-radius: 2%;
+    width: 100%;
+    padding-top: 7%;
+}
+
+.figures-section {
+    display: flex;
+}
+
+.figures-section-inner {
+    max-width: 100%;
+    margin: auto;
+}
+
+.figures-section h1 {
+    color:black;
+    text-align: center;
+    font-size: 72px;
+    font-family: 'DM Sans';
+    font-weight: normal;
+    margin: 50px;
+}
+
+.figure-section-table {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.figure-cell {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 5%;
+    border: 1px solid gray;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.figure-cell h1{
+    font-size: 72px;
+    font-family: 'jeko-medium';
+    font-weight: bold;
+}
+
+.figure-cell span {
+    font-size: 32px;
+}
+
+.figure-cell p {
+    font-size: 19.2px;
+    font-family: 'DM Sans';
+}
+
+.left-image {
+    display: flex;
+    
+}
+
+.left-image-inner {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    padding-top: 15%;
+}
+
+.left-image h1 {
+    color:black;
+    font-family: 'jeko-medium';
+    font-size: 72px;
+    font-weight: normal;
+}
+
+.left-image p {
+    font-family: 'DM Sans';
+    font-size:32px;
+}
+
+.left-image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    max-height: max(70vh,500px);
+    max-width: 45vw;
+    object-fit: cover;
+    padding-left: 50px;
+}
+
+.left-image img{
+    border-radius: 13px;
+}
+
+
+.right-image {
+    display: flex;
+   
+}
+
+.right-image-inner {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    padding-top: 15%;
+}
+
+.right-image h1 {
+    color:black;
+    font-family: 'jeko-medium';
+    font-size: 72px;
+    font-weight: normal;
+}
+
+.right-image p {
+    font-family: 'DM Sans';
+    font-size:32px;
+}
+
+.right-image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    max-height: max(70vh,500px);
+    max-width: 45vw;
+    object-fit: cover;
+    padding-left: 50px;
+}
+
+.right-image img{
+    border-radius: 13px;
+}
