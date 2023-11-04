@@ -1,4 +1,4 @@
-# Your React TypeScript App
+# Elewa Group
 
 Welcome to the documentation for the **Elewa Group**. This README will provide detailed information on how to install and start the application.
 
