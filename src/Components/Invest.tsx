@@ -1,7 +1,43 @@
 import React from 'react'
 import './Invest.css'
 
+
 function Invest() {
+  // Key figures data
+  const keyFigures = [
+    {
+      number: '1.3M',
+      text: 'Approx. number of Kenyan talents reaching the age of 18',
+    },
+    {
+      number: '5M',
+      text: 'Number of East-Africans (EAC) reaching the age of 18 in 2022',
+    },
+    {
+      number: '2022',
+      text: 'Democratic Republic of Congo joins the East African Community',
+    },
+    {
+      number: '1.5M',
+      text: 'Number of unfilled IT vacancies in the US and EU',
+    },
+    {
+      number: '10M',
+      text: 'Number of technical vacancies by 2030',
+    },
+    {
+      number: '2050',
+      text: 'Africa holds the world\'s largest workforce',
+    },
+    {
+      number: '$4.6M',
+      text: 'Startup funding raised by African startups in 2022',
+    },
+    {
+      number: '310%',
+      text: 'Increase in startup funding for companies with HQ in Kenya',
+    },
+  ];
   return (
     <div>
       <img className='background-image' src='https://res.cloudinary.com/dyl3rncv3/image/upload/v1679982347/elewa-group-website/hero-Images/dark-to-light_xrat5g.jpg'></img>
@@ -46,42 +82,17 @@ function Invest() {
       </div>
 
 
-      <div className='figures-section'>
+ {/* Key figures section */}
+ <div className='figures-section'>
         <div className='figures-section-inner'>
           <h1>Key figures</h1>
           <div className='figure-section-table'>
-                <div className='figure-cell'>
-                  <h1>1.3<span>M</span></h1>
-                  <p>Approx. number of Kenyan talents reaching the age of 18</p>
-                </div>
-                <div className='figure-cell'>
-                  <h1>5<span>M</span></h1>
-                  <p>number of East-Africans(EAC) reaching the age of 18 in 2022</p>
-                </div>
-                <div className='figure-cell'>
-                  <h1>2022</h1>
-                  <p>Democratic Republic of Congo joins the East African Community</p>
-                </div>
-                <div className='figure-cell'>
-                  <h1>1.5<span>M</span></h1>
-                  <p>Number of unfilled IT vacancies in the US aand EU</p>
-                </div>
-                <div className='figure-cell'>
-                  <h1>10<span>M</span></h1>
-                  <p>Number of technical vacancies by 2030</p>
-                </div>
-                <div className='figure-cell'>
-                  <h1>2050</h1>
-                  <p>Africa holds the worlds largest workforce</p>
-                </div>
-                <div className='figure-cell'>
-                  <h1>$4.6<span>M</span></h1>
-                  <p>Startup funding raised by African startups in 2022</p>
-                </div>
-                <div className='figure-cell'>
-                  <h1>310<span>%</span></h1>
-                  <p>Increase in startup funding for companies with HQ in Kenya</p>
-                </div>
+            {keyFigures.map((figure, index) => (
+              <div className='figure-cell' key={index}>
+                <h1>{figure.number}</h1>
+                <p>{figure.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
