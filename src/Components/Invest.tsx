@@ -86,15 +86,45 @@ function Invest() {
         </div>
       </div>
 
-      <div className='stakeholder-section'>
-          <div className='stakeholder-section-inner'>
+      <div className='stakeholder-section left-image'>
+          <div className='stakeholder-section-inner left-image-inner'>
               <div>
                 <img src='https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690303/elewa-group-website/Images/IMG_6523_vabpyo.png'></img>
               </div>
-              <div className='stakeholder-text'>
-                <h1>Elewa NV, a multi-stakeholder cooperation</h1><br></br>
-                <p>At the heart of Elewa lies the structure Elewa NV. Based in Brussels, Belgium, Elewa NV is a private holding company which controls the assets of all Elewa activities.</p><br></br>
+              <div className='stakeholder-text left-image-text'>
+                <h1>Elewa NV, a multi-stakeholder cooperation</h1>
+                <p>At the heart of Elewa lies the structure Elewa NV. Based in Brussels, Belgium, Elewa NV is a private holding company which controls the assets of all Elewa activities.</p>
                 <p>Elewa NV is owned and controlled by Elewa's founder, a small community of investors which share in the vision of Elewa and Elewa employees based throughout the activities of the group.</p>
+              </div>
+                
+          </div>
+      </div>
+
+      <div className='creative-hub-section right-image'>
+          <div className='creative-hub-section-inner right-image-inner'>
+          <div className='creative-hub-text right-image-text'>
+                <h1>The Elewa Creative Hub</h1>
+                <p>Coming soon; The Elewa Creative Hub Lies at the heart of our organization. A two-acre property at the center of Nairobi's creative district, the hub connects all Elewa's Activities under a single banner.</p>
+                <p>Through partnerships with creative community, the Elewa Hub will organize vibrant activites that bring talents from different fields (tech, business, art, fashion) together to nurture continuous innovation.</p>
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1679983012/elewa-group-website/Images/creative-hub-image_dd6o8o.jpg"></img>
+              </div>
+
+                
+          </div>
+      </div>
+
+
+      <div className='join-section left-image'>
+          <div className='join-section-inner left-image-inner'>
+              <div>
+                <img src='https://res.cloudinary.com/dyl3rncv3/image/upload/v1679983082/elewa-group-website/Images/invest-now_ftxg4z.jpg'></img>
+              </div>
+              <div className='join-text left-image-text'>
+                <h1>Investing in Elewa NV</h1><br></br>
+                <p>From time to time, we offer investment opportunities (private equity & debt) to out community of investors. Interested to take part when this opportunity arrives?</p>
+                
               </div>
                 
           </div>
