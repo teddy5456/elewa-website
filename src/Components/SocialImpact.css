@@ -240,6 +240,7 @@
 }
 
 .project-section-title h1 {
+    color: #000;
     font-size: 3rem;
     font-family: 'DM Sans';
     font-weight: normal;
@@ -302,6 +303,7 @@
 }
 
 .social-impact-conclusion h1{
+    color: #000;
     text-align: center;
     font-size: 38.4px;
     font-family: 'DM Sans';

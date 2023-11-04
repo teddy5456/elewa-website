@@ -45,7 +45,7 @@ function About() {
                 <a href='/'>Social Impact</a>
               </li>
               <li>
-                <a href='#'>Invest</a>
+                <a href='/invest'>Invest</a>
               </li>
               <li>
                 <a href='#'>Venture Labs</a>
